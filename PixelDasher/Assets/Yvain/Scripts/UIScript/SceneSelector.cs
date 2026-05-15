@@ -1,7 +1,6 @@
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
 //Service: Ce script sert a selectionner une scene.
 //Objet: Le Canvas
 //Auteur: Yvain
