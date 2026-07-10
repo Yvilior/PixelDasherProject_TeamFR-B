@@ -16,6 +16,7 @@ public class FallingPlatformBehaviour : MonoBehaviour
     private Collider2D[] platformColliders;
     private SpriteRenderer sprite;
     private bool isFalling = false;
+    public bool isPlayerOnly = true;
     private void Start()
     {
         spawnPosition = transform.position;
@@ -26,7 +27,11 @@ public class FallingPlatformBehaviour : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!isFalling && (other.CompareTag("Player") || other.CompareTag("Interact")))
+        if (!isPlayerOnly && !isFalling && (other.CompareTag("Player") || other.CompareTag("Interact")))
+        {
+            StartCoroutine(FallSequence());
+        }
+        if (isPlayerOnly && !isFalling && other.CompareTag("Player"))
         {
             StartCoroutine(FallSequence());
         }
@@ -54,7 +59,7 @@ public class FallingPlatformBehaviour : MonoBehaviour
         List<Collider2D> disabledColliders = new List<Collider2D>();
         foreach (Collider2D hitCol in hitColliders)
         {
-            if (hitCol != null && hitCol.CompareTag("Interact"))
+            if (hitCol != null && hitCol.CompareTag("Interact") && !isPlayerOnly)
             {
                 bool isPartofPlatform = false;
                 foreach (Collider2D pCol in platformColliders)
