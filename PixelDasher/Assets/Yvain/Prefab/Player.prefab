@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6102535354349206744}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: MainCamera
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -354,3 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthManager
   spawnPoint: {fileID: 0}
+  maxHealth: 3
+  heartImages: []
+  invincibilityDuration: 1.2
+  flashInterval: 0.15
