@@ -8,8 +8,8 @@ public class PlayerMouvement_Omar : MonoBehaviour
 {
     [Header("Réglages de mouvement")]
     [SerializeField] private float speed = 5f;
-    [SerializeField] private float jumpForce = 7f;
-    [SerializeField] private float doubleJumpForce = 6f; // Légèrement moins fort que le premier saut
+    [SerializeField] private float jumpForce = 8f;
+    [SerializeField] private float doubleJumpForce = 9f; // Légèrement moins fort que le premier saut
     [SerializeField] private PhysicsMaterial2D slipperyMaterial;
 
     [Header("Gravité améliorée")]
