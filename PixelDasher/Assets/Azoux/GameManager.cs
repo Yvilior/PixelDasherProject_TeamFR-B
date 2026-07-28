@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     private int bananaCount = 0;
 
+    [Header("Respawn")]
+    public Vector3 currentRespawnPosition;
     private void Awake()
     {
         // Singleton pour accéder facilement au GameManager depuis les bananes
@@ -40,5 +42,10 @@ public class GameManager : MonoBehaviour
         {
             bananaText.text = "x" + bananaCount;
         }
+    }
+    public void UpdateRespawnPoint(Vector3 newPosition)
+    {
+        currentRespawnPosition = newPosition;
+        Debug.Log("Nouveau point de réapparition enregistré : " + newPosition);
     }
 }
