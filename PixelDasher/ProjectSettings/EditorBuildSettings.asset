@@ -8,6 +8,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Yvain/Levels/YL1.unity
+    guid: 89544ed6190a7f54293cf0b086c6c8f9
+  - enabled: 1
+    path: Assets/Yvain/Levels/YL2.unity
+    guid: f86b476a907b05e48941f89465e0f299
+  - enabled: 1
+    path: Assets/Yvain/Levels/YL3.unity
+    guid: 8e839b35896a14549a91b3a29a3e5b93
+  - enabled: 1
+    path: Assets/Yvain/Levels/YL4.unity
+    guid: 51b7608df1b6179459bd1ac5af4c77bd
+  - enabled: 1
+    path: Assets/Yvain/Levels/YL5.unity
+    guid: e18f730766fd17444986605d86a8f376
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
