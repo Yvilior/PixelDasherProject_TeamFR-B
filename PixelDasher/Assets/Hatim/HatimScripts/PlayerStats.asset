@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
   PlayerLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 64
   WallTag: Wall
   SnapInput: 1
   HorizontalDeadZone: 0.1
-  MaxSpeed: 14
-  Acceleration: 120
+  MaxSpeed: 10
+  Acceleration: 100
   GroundDeceleration: 60
   AirDeceleration: 30
   GroundingForce: -1.5
-  GrounderDistance: 0.1
-  JumpPower: 36
+  GrounderDistance: 0.279
+  JumpPower: 25
   MaxFallSpeed: 40
   FallAcceleration: 110
   JumpEndEarlyGravityModifier: 3
@@ -33,12 +33,12 @@ MonoBehaviour:
   ApexThreshold: 10
   ApexBonusSpeed: 4
   ApexGravityMultiplier: 0.5
-  DoubleJumpPower: 32
+  DoubleJumpPower: 25
   WallDetectionDistance: 0.05
-  WallJumpForce: {x: 20, y: 30}
+  WallJumpForce: {x: 20, y: 20}
   WallJumpLockTime: 0.15
-  WallSlideSpeed: 3
-  DashSpeed: 25
-  DashDuration: 0.15
-  DashCooldown: 1
+  WallSlideSpeed: 1
+  DashSpeed: 15
+  DashDuration: 0.35
+  DashCooldown: 0.5
   DashEndSpeedMultiplier: 0.5
