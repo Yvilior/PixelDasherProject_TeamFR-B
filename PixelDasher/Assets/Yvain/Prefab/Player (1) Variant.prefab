@@ -185,6 +185,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3710390367708260853, guid: b8b26cfc167a0d741807e9cfcfcddf51, type: 3}
+      propertyPath: doublejumpallowed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3710390367708260853, guid: b8b26cfc167a0d741807e9cfcfcddf51, type: 3}
+      propertyPath: gravityflipallowed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7043762263882461753, guid: b8b26cfc167a0d741807e9cfcfcddf51, type: 3}
       propertyPath: dashKey
       value: 32

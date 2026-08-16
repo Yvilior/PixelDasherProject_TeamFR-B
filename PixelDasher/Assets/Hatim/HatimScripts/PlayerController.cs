@@ -96,6 +96,9 @@ public class PlayerController : MonoBehaviour
     // Wall slide tracking
     private bool isWallSlidingNow;
 
+
+    public bool dashallowed,doublejumpallowed,walljumpallowed,gravityflipallowed;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -110,7 +113,6 @@ public class PlayerController : MonoBehaviour
         rb.gravityScale = 0f;
 
 #if UNITY_EDITOR
-        abilities.UnlockAll();
 #endif
     }
 
@@ -118,6 +120,24 @@ public class PlayerController : MonoBehaviour
     {
         OnFacingChanged?.Invoke(isFacingRight);
         OnGravityFlipped?.Invoke(GravityFlipped);
+        abilities.Unlock(AbilityType.WallSlide);
+        if (dashallowed)
+        {
+            abilities.Unlock(AbilityType.Dash);
+        }
+        if (doublejumpallowed)
+        {
+            abilities.Unlock(AbilityType.DoubleJump);
+        }
+        if (walljumpallowed)
+        {
+            abilities.Unlock(AbilityType.WallJump);
+        }
+        if (gravityflipallowed)
+        {
+            abilities.Unlock(AbilityType.GravityFlip);
+        }
+
     }
 
     private void Update()
